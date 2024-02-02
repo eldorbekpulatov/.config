@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/eldorbekpulatov/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?.lua;/Users/eldorbekpulatov/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?/init.lua;/Users/eldorbekpulatov/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?.lua;/Users/eldorbekpulatov/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/eldorbekpulatov/.cache/nvim/packer_hererocks/2.1.1703358377/lib/lua/5.1/?.so"
+local package_path_str = "/local/home/eldorbek/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?.lua;/local/home/eldorbek/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?/init.lua;/local/home/eldorbek/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?.lua;/local/home/eldorbek/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/local/home/eldorbek/.cache/nvim/packer_hererocks/2.1.1692716794/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,98 +76,104 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["alpha-nvim"] = {
     config = { "\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0" },
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["github-nvim-theme"] = {
+    config = { "\27LJ\2\nn\0\0\3\0\6\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\28colorscheme github_dark\bcmd\bvim\nsetup\17github-theme\frequire\0" },
+    loaded = true,
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   playground = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/playground",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/playground",
     url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
     url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   undotree = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/undotree",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/Users/eldorbekpulatov/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    path = "/local/home/eldorbek/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   }
 }
@@ -177,6 +183,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
 time([[Config for alpha-nvim]], false)
+-- Config for: github-nvim-theme
+time([[Config for github-nvim-theme]], true)
+try_loadstring("\27LJ\2\nn\0\0\3\0\6\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\28colorscheme github_dark\bcmd\bvim\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
+time([[Config for github-nvim-theme]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

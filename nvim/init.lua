@@ -2,6 +2,8 @@
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
+vim.opt.termguicolors = true
+vim.opt.number = true
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
@@ -48,4 +50,11 @@ return require('packer').startup(function(use)
   }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
+  use({
+    'projekt0n/github-nvim-theme',
+    config = function()
+      require('github-theme').setup({})
+      vim.cmd('colorscheme github_dark')
+    end
+  })
 end)
