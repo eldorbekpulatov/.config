@@ -14,16 +14,6 @@
 	<string></string>
 	<key>AlternateMouseScrollStringForUp</key>
 	<string></string>
-	<key>AppleAntiAliasingThreshold</key>
-	<integer>1</integer>
-	<key>ApplePressAndHoldEnabled</key>
-	<false/>
-	<key>AppleScrollAnimationEnabled</key>
-	<integer>0</integer>
-	<key>AppleSmoothFixedFontsSizeThreshold</key>
-	<integer>1</integer>
-	<key>AppleWindowTabbingMode</key>
-	<string>manual</string>
 	<key>AutoCommandHistory</key>
 	<true/>
 	<key>AutoHideTmuxClientSession</key>
@@ -4166,13 +4156,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.67058825492858887</real>
+				<real>0.84313725490196079</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.61568629741668701</real>
+				<real>0.81568627450980391</real>
 				<key>Red Component</key>
-				<real>0.56470590829849243</real>
+				<real>0.792156862745098</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -4260,7 +4250,7 @@
 			<key>Command</key>
 			<string>/opt/homebrew/bin/fish</string>
 			<key>Cursor Boost</key>
-			<real>0.13986979166666666</real>
+			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -4641,7 +4631,7 @@
 				<real>0.32549020648002625</real>
 			</dict>
 			<key>Minimum Contrast</key>
-			<real>0.34739583333333335</real>
+			<real>0.34895833333333331</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
