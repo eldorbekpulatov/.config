@@ -1,6 +1,9 @@
 # macOS system files
 .DS_Store
 
+#remove the packer generated dir
+nvim/plugin/
+
 # Xcode
 *.swp
 *.xcuserstate
