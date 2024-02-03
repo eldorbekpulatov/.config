@@ -1,18 +1,14 @@
 #!/bin/fish
 
-if [ -n "$BASH_VERSION" ]; then
-  echo "Running in Bash. Please use: source install.sh"
-else
-  set file_path "~/.local/share/nvim/site/pack/packer/start/packer.nvim"
-  echo "Not running in Bash"
-end
+# Specify the directory where you want to clone the repository
+set packer_directory ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
-if not test -e "$file_path"
-  git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+# Check if the directory exists
+if not test -e "$packer_directory"
+    git clone --depth 1 https://github.com/wbthomason/packer.nvim $packer_directory
+    echo "Packer.nvim cloned successfully!"
 else
-  echo "Packer already exists!"
+    echo "Packer.nvim already exists!"
 end
 
 cp ./tmux/.tmux.conf  ~/
-cp ./zsh/.zshrc  ~/
