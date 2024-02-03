@@ -17,15 +17,15 @@ local function my_on_attach(bufnr)
   api.config.mappings.default_on_attach(bufnr)
 
   -- custom mappings
-  vim.keymap.set('n', '<leader>^',  api.tree.change_root_to_parent,        opts('Up'))
-  vim.keymap.set('n', '<leader>&',  api.tree.change_root_to_node,          opts('Help'))
-  vim.keymap.set('n', '<leader>to', api.tree.open,                         opts('Open'))
-  vim.keymap.set('n', '<leader>tc', api.tree.close,                        opts('Close'))
-  vim.keymap.set('n', '<leader>tt', api.tree.toggle,                       opts('Toggle'))
-  vim.keymap.set('n', '<leader>tr', api.tree.reload,                       opts('Reload'))
-  vim.keymap.set('n', '<leader><',  api.tree.collapse_all,                 opts('Collapse'))
-  vim.keymap.set('n', '<leader>>',  api.tree.expand_all,                   opts('Expand'))
-  vim.keymap.set('n', '?',          api.tree.toggle_help,                  opts('Help'))
+  vim.keymap.set('n', '<leader>^', api.tree.change_root_to_parent, opts('Up'))
+  vim.keymap.set('n', '<leader>&', api.tree.change_root_to_node, opts('Help'))
+  vim.keymap.set('n', '<leader>to', api.tree.open, opts('Open'))
+  vim.keymap.set('n', '<leader>tc', api.tree.close, opts('Close'))
+  vim.keymap.set('n', '<leader>tt', api.tree.toggle, opts('Toggle'))
+  vim.keymap.set('n', '<leader>tr', api.tree.reload, opts('Reload'))
+  vim.keymap.set('n', '<leader><', api.tree.collapse_all, opts('Collapse'))
+  vim.keymap.set('n', '<leader>>', api.tree.expand_all, opts('Expand'))
+  vim.keymap.set('n', '?', api.tree.toggle_help, opts('Help'))
 end
 
 -- OR setup with some options
