@@ -3,4 +3,5 @@ if status is-interactive
 end
 
 alias nproc="sysctl -n hw.logicalcpu"
-
+alias pyton="python3"
+alias pip="pip3"
